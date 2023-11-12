@@ -1,0 +1,211 @@
+-- Brought to you by Mayavired on youtube!!
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
+Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "CopKe Hub"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 50.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "K" , false , game)
+end)
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 30
+
+-- script
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Đăng Ký Cho Cọp Kè";
+ Text = "Credits Cọp Kè";
+ Icon = "rbxassetid://14402210347";
+ Duration = 100;
+ Button1 = "Tôi Đồng Ý";
+ Callback = NotificationBindable;
+})
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
+
+local Window = Library.CreateLib("Cọp Kè Hub", "DarkTheme")
+
+local Tab = Window:NewTab("Blox Fruit Script Coming Soon!")
+local Section = Tab:NewSection("Blox Fruit Hub")
+
+Section:NewButton("Đố Má Níc Gà", "Auto Farm Auto Farm Bone,...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+end)
+
+Section:NewButton("Sô Níc Gà", "Auto Farm Auto Farm Bone,...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
+end)
+
+Section:NewButton("Master Hub", "Auto Farm Auto Farm Bone,...", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
+end)
+
+Section:NewButton("Mtriet Hub", "Auto Farm Auto Farm Bone,...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+end)
+
+Section:NewButton("Auto chest by mtriet hub", "Auto Farm Auto Farm Bone,...", function()
+    getgenv().Config = {
+    ["StartFarmChest"] = true,
+    ["Team"] = "Marines",
+    ["TimeReset"] = 5, -- No Edit
+    ["White Screen"] = false,
+    ["Stop The God's Chalice"] = true,
+    ["Stop The Fist of Darkness"] = true,
+    ["HopServer"] = {
+        ["Enable"] = true,
+        ["BypassServer"] = true,
+        ["Region"] = "Singapore"
+    },
+    ["Server Discord"] = "https://discord.gg/mFzWdBUn45"
+}
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/Chest-Farm.lua"))()
+end)
+
+Section:NewButton("Ăn Ba Bát Cơm Hub", "Auto Farm Auto Farm Bone,...", function()
+    getgenv().C = {
+["Team"] = Marines,
+    ["White If Open Other Tab"] = true
+}
+repeat wait() until game:IsLoaded()
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/JewhisKids/StarXYZHub/main/BloxFruits/Main.lua"))()
+end)
+
+Section:NewButton("Ansit Hub", "Auto Farm Auto Farm Bone,...", function()
+    --true/false--
+_G.Settings = {
+Weapon = "Melee"; --Melee/Sword
+AutoFarm = false;
+Auto_Farm_Ectoplasm = false;
+AutoRengoku = false;
+AutoFactory = false;
+AutoDarkDanger = false;
+AutoBuyEnchancementColour = false;
+AutoEvoRace = false;
+Auto_Swan_Glasses = false;
+Katakuri = false;
+AutoFarmBone = false;
+Elite = false;
+AutoFarmBoss = false;
+AutoSoulReaper = false;
+TPMystic = false;
+AutoPole = false;
+TrialHuman = false;
+TrialGhoul = false;
+AutoTrialRaceMink = false;
+AutoTrialRaceSky = false;
+RandomFruit = false;
+AutoStoreFruit = false;
+WalkWater = false;
+InfSoru = false;
+InfGeppo = false;
+InfAbility = false;
+Clickattack = false; --fast attack
+AutoSpawnKatakuri = false;
+AutoAwakeningRace = false;
+SuperFastattack = false;
+FastAttackDelay = "Normal"; --Normal/Fast
+MagmaOreS1 = false;
+AngelWings = false;
+MagmaOreS2 = false;
+MysticDroplet = false;
+Fishtail = false;
+CoCa = false;
+DragonScale = false;
+}
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/AnSitDz/AnSitHub/main/BloxFruits"),true))()
+end)
+
+Section:NewButton("Arsend Hub", "Auto Farm Auto Farm Bone,...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/BF"))()
+end)
+
+local Section = Tab:NewSection("Sẽ Có Nhiều Hub Hơn Nhé")
+
+local Tab = Window:NewTab("Fps And Blade Ball")
+local Section = Tab:NewSection("Script Fps")
+
+Section:NewButton("Fps Unlocker", "Max Fps Give Smooth Game", function()
+    _G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true-- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Explosions"] = true, -- Makes Explosion's invisible
+    ["No Clothes"] = true, -- Removes Clothing from the game
+    ["Low Water Graphics"] = true, -- Removes Water Quality
+    ["No Shadows"] = true, -- Remove Shadows
+    ["Low Rendering"] = true, -- Lower Rendering
+    ["Low Quality Parts"] = true -- Lower quality parts
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+end)
+
+Section:NewButton("Fps Checker", "Kiểm Tra Fps Có Cao Hay Không", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()
+end)
+
+Section:NewButton("Bedol Hub", "Auto Parry,...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end)
+
+Section:NewButton("DevTravDYT", "Auto Parry,..", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DevTravDYT/dsaaswadfeszad/main/Testt'))();
+end)
+
+local Section = Tab:NewSection("KeyBind")
+
+Section:NewKeybind("Toggle Ui", "Không đc đổi", Enum.KeyCode.K, function()
+	Library:ToggleUI()
+end)
